@@ -1,0 +1,257 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ accordion</title>
+    
+  </head>
+  <style>
+    *,*::after,*::before{
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Kumbh Sans',sans-serif;
+    color: rgb(124,124,125);
+    font-size: 1rem;
+    height: 120vh;
+    background-image: linear-gradient(to right,hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    overflow: hidden;
+}
+p{
+    font-size: 1.4rem;
+
+}
+.flex{
+    cursor: pointer;
+}
+.flex:hover{
+    color:orange;
+}
+.content p{
+    display: none;
+}
+.content{
+    border-bottom: 2.4px solid hsl(240, 5%, 91%);
+}
+.content.show p{
+    display: block;
+}
+.content .vi img{
+  width: 70%;
+  cursor: pointer;
+  height:0.8rem ;
+}
+.content.show h2{
+    color: rgb(19,19,21);
+}
+.content.show .vi img{
+    rotate: -180deg;
+}
+
+.flex{
+    display: flex;
+    /* gap: 5rem; */
+    align-items: center;
+    justify-content: space-between;
+}
+.vi {
+    height: 1.6rem;
+}
+.faq{
+margin-top: 3rem;
+}
+h1{
+    text-align: center;
+}
+.card{
+    width: 360px;
+    margin: 16rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+    border-radius: 14px;
+    margin-top: 85px;
+}
+.card .b{
+    z-index: 1;
+    width: 30%;
+    position: absolute;
+    top: -50px;
+    left: 18px;
+    /* right: -1px; */
+}
+
+.li{
+    width: 70%;
+    position: absolute;
+    top: -119px;
+    left: 5rem;
+    /* right: 2px; */
+}
+.c{
+    display: none;
+}
+.r{
+    position: relative;
+    left: 3rem;
+}
+ @media screen and (min-width:764px) {
+    .m{
+        display: none;
+    }
+    .c{
+        display: block;
+        position: relative;
+        align-self: center;
+        background-image: url(images/bg-pattern-desktop.svg);
+    }
+    .card{
+        padding-right: 4rem;
+        padding-bottom: 5rem;
+        display: grid;
+        max-width: 950px;
+        width: 900px;
+        margin-inline:auto ;
+        grid-template-columns:1fr 1fr;
+    }
+    .c img{
+        width:100%;
+        margin-right: 6rem;
+        position: relative; 
+         left: -1rem;
+         height: 400px;
+
+        /* justify-self: flex-start; */
+    }
+    .c .box{
+        width: 170px;
+        position: absolute;
+        bottom: 1.8rem; 
+         /* top: 0rem; */
+        /* right: 0;
+        bottom: -1rem; */
+    }
+    h1{
+        text-align: left;
+    }
+    .jj{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        /* z-index:-1; */
+        left: 1rem;
+    }
+ }
+ .vi{
+  color: black;
+  height: 20px;
+  width: 15px;
+ }
+
+
+  </style>
+  <body>
+    <div class="card">
+      <!-- <img  src="images/illustration-box-desktop.svg" alt="" /> -->
+      <!-- <img
+        class="li"
+        src="images/illustration-woman-online-desktop.svg"
+        alt=""
+      /> -->
+      <div class="c">
+        <img src="https://luminous-bunny-195275.netlify.app/illustration-woman-online-desktop.aad9a73e.svg" alt="" >
+        
+        <div class="jj">
+          
+        </div>
+
+        <!-- <img class="jj" src="images/bg-pattern-desktop.svg" alt="" /> -->
+      </div>
+      <div class="m">
+        <img class="li" src="https://luminous-bunny-195275.netlify.app/illustration-woman-online-desktop.aad9a73e.svg" alt="">
+        <img class="r" src="https://www.svgbackgrounds.com/wp-content/uploads/2021/05/subtle-prism-triangle-pattern.jpg" alt="">
+      </div>
+      <div class="faq">
+        <h1 style="color: black;">FAQ</h1>
+        <div class="content">
+          <div class="flex">
+            <h2>How many team members can I invite?</h2>
+            <div class="vi">
+              <img src="\https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="">
+            </div>
+          </div>
+          <p>
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </div>
+        <div class="content">
+          <div class="flex">
+            <h2>What is the maximum file upload size?</h2>
+            <div class="vi">
+              <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="">
+            </div>
+          </div>
+          <p>
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </div>
+        <div class="content">
+          <div class="flex">
+            <h2>How do I reset my password?</h2>
+            <div class="vi">
+              <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="">
+            </div>
+          </div>
+          <p>
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </div>
+        <div class="content">
+          <div class="flex">
+            <h2>Can I cancel my subscription?</h2>
+            <div class="vi">
+              <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="">
+            </div>
+          </div>
+          <p>
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </div>
+        <div class="content">
+          <div class="flex">
+            <h2>Do you provide additional support?</h2>
+            <div class="vi">
+              <img src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png" alt="">
+            </div>
+          </div>
+          <p>
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </div>
+      </div>
+    </div>
+<script>
+  let ar = document.querySelectorAll(".flex");
+// arr = document.querySelectorAll(".vi img");
+// console.log(arr );
+// ar = [...ar, ...arr];
+ar.forEach((e) => {
+  e.addEventListener("click", show);
+});
+function show(e) {
+  console.log(e.target);
+  e.target.closest(".content").classList.toggle("show");
+}
+</script>  
+
+</body>
+</html>
